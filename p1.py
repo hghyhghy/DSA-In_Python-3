@@ -1,37 +1,42 @@
 
+# inheritance 
 
-# accessing the values of dictionaires using loops 
+class Pet:
 
-# creating a dictionary 
+    def __init__(self,name,age):
 
-d1={5:"Geeks ",6:"For",7:"Geeks"}
+        self.name=name
 
-
-print("The  original dictionary is ")
-
-print(d1)
-
-print(f"The key values from the dictionary {d1} is ")
-
-for i in d1:
-
-    print(i,d1[i])
-
-# accessing the valus using items() 
-
-d={1:"Subham",2:"Loves his",3:"Mom and",4:"Shreyoshi"}
-
-print("The original dictionary is")
-
-print(str(d))
-
-#use of dict.itms() method
-
-print("The key, values  are")
-
-for key,value in d.items():
-
-    print(key,value)
+        self.age=age
 
 
+# inheriting the class Pet by a class Cat
+    
+class Cat(Pet):
+
+    def __init__(self, name, age):
+       
+       # inheriting the superclass function 
+       #by using super()  keyword 
+         
+        super().__init__(name, age)
+
+
+# creating the driver code 
+
+def ofmain():
+
+    #creating the object in class Pet
+
+    thepet=Pet("thePet",2)
+
+    mycat=Cat("myCat",1)
+
+    # the isinstance() is the keyword is used to check 
+
+    # wheather the class is inherited from other or not 
+
+    print("Is Tini is a cat", str(isinstance(mycat,Cat)))
+
+    print("Is thepet is a pet", str(isinstance(thepet,Pet)))
 

@@ -1,15 +1,37 @@
 
 
-# accessing the  elements using enumerator
+# class with attribute 
 
-d={1:"Subham",2:"Loves his",3:"Mom and",4:"Shreyoshi"}
+class Dog():
 
-print("The original dictionary is ")
+    attr1="Mammal"
 
-print(d)
+    #instance attribute 
 
-print("The key, values are")
+    def __init__(self,name):
 
-for i in enumerate(d.items()):
+        self.name=name
 
-    print(i)
+
+# driver codw
+
+# creating the attributes 
+
+Rodger=Dog("Rodger")
+
+Tommy=Dog("Tommy")
+
+# accessing the class attributes 
+
+
+print("Rodger is a", format(Rodger.__class__.attr1))
+
+print("Tommy is a", format(Rodger.__class__.attr1))
+
+# accessing the names 
+
+print("My name is ", format(Rodger.name))
+
+print("My name is ", format(Tommy.name))
+ 
+ 

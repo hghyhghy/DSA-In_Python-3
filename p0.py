@@ -1,49 +1,32 @@
 
+# methods 
 
-# creating a dictionary from the list 
+class Vector():
 
-# creating an empty dictionary 
+    x=0.0
 
-d={}
-
-print("The empty dictionary is ")
-
-print(d)
-
-#creatting a list
-
-l=[(1,"Subham"),(2,"Love  his MOM")]
-
-print("The list is ")
-
-print(l)
-
-print("The dictionary from the list is ")
-
-d=dict(l)
-
-print(d)
+    y=0.0
 
 
-# merging two dictionaries 
+    # creating a method 
 
-d1={5:"Geeks ",6:"For",7:"Geeks"}
+    def set(self,x,y):
 
-print("The concatenated dictionaries are ")
+        self.x=x
 
-d1.update({8:"Python"})
+        self.y=y
 
-print(d1)
 
-# merging two dictionaries using |= operator 
+def ofmain():
 
-veg1={1:"carrot",2:"Brinjal"}
+    # creating an object of the class Vector 
 
-veg2={3:"Lady Finger",5:"Onion"}
+    myv=Vector()
 
-print("The concatenated dictionary is  ")
+    # accessing the elements by using  that object 
 
-veg1|=veg2
+    myv.set(5,6)
 
-print(veg1)
+    print("x", "is", myv.x , "y","is",myv.y)
 
+ofmain()

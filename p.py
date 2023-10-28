@@ -1,43 +1,29 @@
 
 
-# different dictionary methods in python
+# creating a class 
 
-# creating a dictionary
+class Myclass:
 
-d={1:"Subham",2:"Loves his",3:"Mom and",4:"Shreyoshi"}
+    number=0
 
-#copying  element to another dict
+    name="xyz"
 
-d1=d.copy()
+# creating a definition 
 
-print("The newly copied element in the dictionary is ")
+def ofmain():
 
-print(d1)
+    # creating an object to  class 
+    
+    me=Myclass()
 
-# get method
+    #using the object to access elements 
 
-print(f"The first element of the dictionary {d1} is ")
+    me.number=1221
 
-print(d1.get(1))
+    me.name="Subham"
 
+    #printing the statement 
 
-# getting  elements by using items () method 
+    print(me.name ," " , str( me.number))
 
-print(f"The items  of the dictionary {d1} is ")
-
-print(d1.items())
-
-# deleting element by using pop method 
-
-print(f"Deleting the  last  element of the dictionary {d1} is ")
-
-print(d1.pop(4))
-
-#updating the elements of the dictionary by using update() 
-
-print("The updated dictionary is ")
-
-d1.update({4:"Shreyoshi"})
-
-print(d1)
-
+ofmain()
